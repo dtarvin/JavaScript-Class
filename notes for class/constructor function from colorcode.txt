@@ -1,0 +1,40 @@
+What is Constructor Function in JavaScript?
+
+Gets its name from the constructor function you get inside classes in object oriented languages
+
+Every time you create an instance of a class in an OOP language the constructor function is the first thing that gets executed
+
+With JavaScript, because we didn't have classes for a long time but we needed the functionality, we get the constructor function without the class itself
+
+constructor function - a function that creates objects for us
+	- very similar to factory functions
+	
+unlike factory functions, constructors don't actually return the object to you
+	- instead, the "new" keyword is involved as well as the "this" keyword
+	- it's a blueprint for creating objects so we don't have to repeat all the unnecessary parts - instead we just have to specify the unique parts
+	
+constructor functions by convention start with a capital letter
+	- will actually work without it, but we're trying to make it seem like we're using classes, we want to hint that this is a constructor 
+
+> function Person(name) {
+	this.name = name
+  }
+  
+  - takes a name and sets it to this.name 
+  - can invoke the function with the "new" keyword
+
+const sina = new Person('Sina')
+
+> Sina
+<- Person {name: "Sina"}
+       name: "Sina"
+	   __proto__: Object
+
+	- sina is type Person 
+	- if we look inside there is a name
+	- it created the object for us
+		- not that different from a factory function
+		- diference is here we have the object type
+		- with factory function without constructor it would just say object
+		
+function isn't actually returning anything lj

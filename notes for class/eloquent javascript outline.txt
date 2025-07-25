@@ -1,0 +1,78 @@
+Eloquent JavaScript
+
+I.	Values, Types, and Operators
+	A.	Bits
+		1.	All computer data is stored as bits
+		2.	Any kind of two-valued thing
+			a.	usually described as zeros and ones
+			b.	inside a computer:
+				i.		high or low electrical charge
+				ii.		strong or weak signal
+				iii.	shiny or dull spot on CD
+		3.	Expressing a number in bits:
+			a.	instead of 10 different digits, we have only 2
+			b.	weight of each increases by a factor of two from right to left
+			c.	the number 13 in bits:
+			
+				  0  0   0   0  1   1   0   1
+				128	64	32	16	8	4	2	1
+				
+				i.		binary number 00001101
+				ii.		the non-zero digits stand for 8, 4, 1 and add up to 13
+		
+	B.	Values
+		1.	Chunks of bits that represent pieces of information
+		2.	Each value has a type that determines its role
+			a.	numbers
+			b.	text
+			c.	true or false
+			d.	etc
+		3.	Creating a value 
+			a.	invoke its name
+		4.	Numbers
+			a.	numeric values
+			b.	fixed number of bits to store a single number value
+				i.		64 bits exactly
+				ii.		limits number of different numbers that can be represented
+				iii.	with N decimal digits, can represent 10**N numbers
+				iv.		with 64 binary digits, can represent 2**64 different
+						numbers - about 18 quintillion (18 with 18 zeros after it)
+				v.		one bit indicates the sign of the number (+ or -)
+				vi.		some bits are used to store the position of the decimal 
+						point
+				vii.	Actual maximum whole number that can be stored is more in 
+						the range of 9 quadrillion (15 zeros)
+			c.	fractional numbers written using a dot: 9.81
+			d.	for very big or very small numbers, you can use scientific 
+				notation
+				i.		move the decimal point of the number to the right or to 
+						the left so that there is one non-zero digit to the left 
+						of the decimal
+
+						299,800,000 -> 2.99800000
+						
+				i.		count the number of spaces the decimal has moved
+				
+						from 299,800,000 to 2.99800000, decimal has moved 8 
+						spaces
+						
+				iii.	after the last non-zero digit, put the letter e 
+				
+						2.998e8
+						
+				iv.		after the 8, put the number of spaces the decimal has 
+						moved - this represents multiplying the converted number 
+						by 10 to the power of however many spaces the decimal has 
+						moved 
+						
+						2.998e8 -> 2.998 * 10**8 = 299,800,000
+				
+				v.		if the decimal moved to the right instead of the left, 
+						add a negative sign to the number of spaces the decimal 
+						moved
+						
+						0.000047 -> 4.7e-5 -> 4.7 * 10**-5
+						
+			e.	calculations with whole numbers (integers) smaller than 9 
+				quadrillion are guaranteed to always be precise
+					i.		calculations with fractional numbers are not 

@@ -1,0 +1,12 @@
+A History of JavaScript and its Evolution - 13 slides - 39 min
+
+About JavaScript - 20 slides - 1 hr
+	- need to include practice for:
+		- adding JavaScript directly in HTML
+		- adding JavaScript via an external file
+		- alert()
+		- prompt()
+		- console.log()
+	- how much time for this?
+	
+	

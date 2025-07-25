@@ -1,0 +1,11 @@
+Examples to use in JavaScript class
+
+For !! - turning value into boolean:
+	<FormControl error={!!fieldState.error && touchedFields.month}>
+		<Select sx={{ height: '36px' }}
+			{...field}
+			onChange={(e) => {
+				field.onChange(e);
+				handleFieldChange('month')(e);
+			}}
+	- the error itelf is a string, but we want to see if an error even exists

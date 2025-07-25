@@ -1,0 +1,39 @@
+10 Things JavaScript Developers Should Know But Probably Don't
+
+1. Inheritance
+
+Purpose - reduce code duplication
+In JavaScript, can be done with or without classes
+
+const me = {
+	talk() {
+		return 'Talking';
+	}
+}
+me.talk();     "Talking"
+
+const you = {
+	talk() {
+		return 'Talking';
+	}
+}
+you.talk();     "Talking"
+
+Two problems:
+
+1. 	Code duplication
+2.	If there's a bug, has to be fixed in several locations - wherever code is duplicated
+
+One way to fix is using inheritance
+
+class Person {
+	talk() {
+		return 'Talking';
+	}
+}
+
+Can create objects using this class template
+const me = new Person();
+const you = new Person();
+me.talk();     "Talking"
+you.talk();     "Talking"

@@ -1,0 +1,31 @@
+JavaScript "this"
+
+Outside a function/in the global context, "this" is the window object
+
+Inside a function - typically it's whoever is calling the function
+
+function talk() {
+	return this;
+}
+
+const me = {
+	name: 'Sina',
+	talk				// this is shortcut for talk: talk 
+}
+
+me.talk();
+
+Rule is whatever is on the left side of the method invocation is "this"
+	- in me.talk(), me is on the left side of the invocation of talk(), so the "this" inside of the function talk() is the me object
+	
+*** So is "this" always an object?
+
+if we call talk() directly (in the global context), the "this" object is the window object, because the function talk() is directly on the window object
+	
+	- if you expand the window object in the console, you will see talk() in the list of methods alongside the methods that are on every function by default
+	
+	- when you call talk() directly, the browser assumes you meant windows.talk()
+	
+	- if using strict mode (React), strict JavaScript does not allow calling window inside a function using "this"
+	
+		- just say "window" if calling window inside a function
