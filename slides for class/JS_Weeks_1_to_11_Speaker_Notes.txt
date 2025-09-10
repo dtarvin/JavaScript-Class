@@ -1,0 +1,579 @@
+============================================================
+JS Week1 Slides
+============================================================
+
+-- JavaScript Week 1: Syntax, Values, Variables & Operators --
+In this slide, we cover: Course Introduction & Fundamentals.
+
+-- Course Overview & What You'll Learn --
+In this slide, we cover: Goals for Week 1, Course tools and setup, Overview of JavaScript's role in web development.
+
+-- What is JavaScript? --
+In this slide, we cover: Client-side scripting language, Runs in the browser (and on servers with Node.js), Used for dynamic and interactive content.
+
+-- Syntax and Expressions --
+In this slide, we cover: JavaScript syntax basics, Statements vs expressions, Semicolons and formatting.
+
+-- Comments and Whitespace --
+In this slide, we cover: // single-line and /* multi-line */ comments, Whitespace is flexible but affects readability, Clean formatting matters.
+
+-- Live Demo: First Script --
+In this slide, we cover: console.log("Hello, world!"), How to run JavaScript in the browser, Developer tools: Console tab.
+
+-- What is a Value? --
+In this slide, we cover: A value is any piece of data in JavaScript, Everything manipulated in a JS program is a value.
+
+-- Primitive Data Types --
+In this slide, we cover: Number, String, Boolean, Undefined, Null, Symbol, BigInt, Immutable and directly represented.
+
+-- typeof Operator --
+In this slide, we cover: typeof 42 -> 'number', typeof "hello" -> 'string', typeof null -> 'object' (quirk).
+
+-- Type Coercion --
+In this slide, we cover: "5" - 2 -> 3, "5" + 2 -> "52", Always use === instead of ==.
+
+-- Truthy and Falsy --
+In this slide, we cover: Falsy: 0, '', null, undefined, NaN, false, Everything else is truthy, Used in conditionals.
+
+-- Declaring Variables --
+In this slide, we cover: let, const, var, Use const when you can, let when you must, Avoid var in modern code.
+
+-- Variable Scope --
+In this slide, we cover: Block, function, and global scope, let/const are block scoped, Closures retain outer scope.
+
+-- Naming Conventions --
+In this slide, we cover: camelCase for variables/functions, Avoid reserved keywords, Be descriptive but concise.
+
+-- Live Demo: Variable Declarations --
+In this slide, we cover: let score = 10;, const name = "Alice";, Try reassigning each.
+
+-- Arithmetic Operators --
+In this slide, we cover: +, -, *, /, %, **, Order of operations (PEMDAS) applies.
+
+-- String Concatenation --
+In this slide, we cover: "Hello" + " World" -> "Hello World", Use template literals for cleaner syntax.
+
+-- Comparison Operators --
+In this slide, we cover: == vs ===, != vs !==, <, <=, >, >=.
+
+-- Logical Operators --
+In this slide, we cover: && (AND), || (OR), ! (NOT), Short-circuit evaluation, Used for conditionals and defaults.
+
+-- Operator Precedence --
+In this slide, we cover: Grouped, then unary, then multiplication/addition, then comparisons, Use parentheses to clarify logic.
+
+-- End of Week Review --
+In this slide, we cover: Common pitfalls: coercion, undeclared variables, off-by-one errors, Use console.log() to debug, Prepare for Week 2: conditionals and loops.
+============================================================
+JS Week2 Slides
+============================================================
+
+-- JavaScript Week 2: Conditionals, Loops, and Functions --
+In this slide, we cover: Control Flow & Code Reusability.
+
+-- Week 2 Overview --
+In this slide, we cover: Focus: Decision-making, repetition, and reusable logic, Topics: Conditionals, Loops, Functions, Practice integrated after each section.
+
+-- Control Flow in JavaScript --
+In this slide, we cover: Control flow determines what code runs and when, JavaScript executes top to bottom unless directed otherwise.
+
+-- if and else Statements --
+In this slide, we cover: Basic conditional structure, if (condition) { ... } else { ... }, Blocks run only when condition is true.
+
+-- else if and Nested Conditionals --
+In this slide, we cover: Multiple branches with else if, Be cautious of deep nesting — hard to read, Consider switch for many cases.
+
+-- Truthy and Falsy Review --
+In this slide, we cover: Falsy: false, 0, '', null, undefined, NaN, All else is truthy, Used to evaluate conditions implicitly.
+
+-- switch Statement --
+In this slide, we cover: Alternative to chained if/else, case + break, with optional default, Only works with strict equality (===).
+
+-- Comparison Operators --
+In this slide, we cover: == vs ===, <, >, <=, >=, !== vs !=.
+
+-- Logical Operators Recap --
+In this slide, we cover: &&, ||, !, Short-circuit evaluation, Common in complex conditions.
+
+-- Practice: Build a Grading System --
+In this slide, we cover: if (score >= 90) → A, else if → B, C, etc., Add support for invalid inputs (NaN, negatives).
+
+-- Intro to Loops --
+In this slide, we cover: Loops let you repeat code automatically, Common types: for, while, do-while.
+
+-- for Loop Syntax --
+In this slide, we cover: for (init; condition; update) { ... }, Used when number of iterations is known, Counter variables commonly used (i, j).
+
+-- while Loop Syntax --
+In this slide, we cover: Runs as long as condition is true, Condition is checked before loop body, Can cause infinite loop if not careful.
+
+-- do-while Loop Syntax --
+In this slide, we cover: Executes once before checking condition, Useful when at least one execution is needed.
+
+-- Loop Control: break and continue --
+In this slide, we cover: break: exit the loop early, continue: skip to next iteration, Useful for conditional skipping.
+
+-- Practice: Sum Numbers 1–100 --
+In this slide, we cover: Use a for loop to add numbers from 1 to 100, Display result with console.log.
+
+-- Intro to Functions --
+In this slide, we cover: Functions group reusable code, function name(params) { ... }, Call with name(args).
+
+-- Function Parameters and Return --
+In this slide, we cover: Use parameters to pass in values, Use return to send back results, Can be called multiple times with different args.
+
+-- Function Scope --
+In this slide, we cover: Variables inside a function are local, Cannot be accessed outside, Avoid name collisions with global vars.
+
+-- Practice: Write a Greeting Function --
+In this slide, we cover: Create greet(name) → 'Hello, name!', Test with multiple inputs, Log return values.
+
+-- End of Week 2 Review --
+In this slide, we cover: if/else vs switch, for vs while vs do-while, Function declarations and scope, Prepare for Week 3: arrays and objects.
+============================================================
+JS Week3 Slides
+============================================================
+
+-- JavaScript Week 3: Arrays, Objects, Scope & Debugging --
+In this slide, we cover: Data Structures, Execution Context, and Tools.
+
+-- Week 3 Overview --
+In this slide, we cover: Focus: Collections, Object Structures, Execution Context, Debugging, Topics: Arrays, Objects, Scope, Closures, Console Tools.
+
+-- What is an Array? --
+In this slide, we cover: Ordered collection of elements, Indexed starting at 0, Created with [] or new Array().
+
+-- Array Methods (Part 1) --
+In this slide, we cover: Common methods: push, pop, shift, unshift, Access by index: arr[0], arr[1], Length property: arr.length.
+
+-- Array Methods (Part 2) --
+In this slide, we cover: Includes, indexOf, slice, splice, join and split (with strings), forEach for iteration.
+
+-- Practice: Manipulate an Array --
+In this slide, we cover: Create an array of 5 strings, Remove the first and last elements, Add a new item and log final state.
+
+-- What is an Object? --
+In this slide, we cover: Key-value pairs grouped together, Created with {} or new Object(), Keys are strings (or symbols).
+
+-- Accessing Object Data --
+In this slide, we cover: Dot notation: obj.key, Bracket notation: obj["key"], Can nest objects inside other objects.
+
+-- Modifying Objects --
+In this slide, we cover: Add: obj.newKey = value, Update: obj.key = newValue, Delete: delete obj.key.
+
+-- Object Iteration --
+In this slide, we cover: Use for...in to loop over keys, Object.keys, Object.values, Object.entries, Useful for dynamic access.
+
+-- Practice: Build a User Profile Object --
+In this slide, we cover: name, age, email, hobbies (array), Log values using both dot and bracket notation.
+
+-- What is Scope? --
+In this slide, we cover: Scope defines where variables exist, Block vs function vs global scope, let and const are block scoped.
+
+-- Closures Explained --
+In this slide, we cover: A closure is a function that remembers the environment it was created in, Allows inner function to access outer variables after execution, Common in callbacks and factory functions.
+
+-- Example: Closure in Action --
+In this slide, we cover: function outer() { let count = 0; return function() { count++; return count; } }, Each call to outer() creates a new closure environment.
+
+-- Debugging with console.log --
+In this slide, we cover: Use console.log() to trace values, Add logs before and after conditionals or loops, Helps you find unexpected values.
+
+-- Breakpoints and Dev Tools --
+In this slide, we cover: Access browser developer tools (F12 or right-click > Inspect), Use 'Sources' tab to pause execution, Inspect variables and the call stack.
+
+-- Call Stack & Execution Order --
+In this slide, we cover: JS uses a call stack to manage function calls, LIFO: Last In, First Out, Helps explain nested function execution.
+
+-- Practice: Debug a Broken Function --
+In this slide, we cover: Use console.log to trace logic, Add breakpoints to step through loop, Fix scoping or logic error.
+
+-- End of Week 3 Review --
+In this slide, we cover: Arrays vs Objects: when to use each, Scope and closure in nested functions, Dev tools for inspecting and debugging code, Preview: DOM Manipulation (Week 4).
+============================================================
+JS Week4 Slides
+============================================================
+
+-- JavaScript Week 4: DOM, Events, Classes, OOP --
+In this slide, we cover: Browser Interaction & Object-Oriented Programming.
+
+-- Week 4 Overview --
+In this slide, we cover: Focus: DOM manipulation, events, and class-based OOP, Hands-on interaction with HTML and structured JS objects.
+
+-- What is the DOM? --
+In this slide, we cover: DOM = Document Object Model, Represents HTML as a tree of objects, JavaScript can access and modify it.
+
+-- Selecting Elements --
+In this slide, we cover: document.getElementById(), document.querySelector() / querySelectorAll(), Use CSS selectors to target elements.
+
+-- Modifying DOM Content --
+In this slide, we cover: element.textContent / innerHTML, element.setAttribute(), removeAttribute(), style property for inline CSS changes.
+
+-- Creating & Removing Elements --
+In this slide, we cover: document.createElement(), appendChild(), remove(), Set properties before inserting, Use loops to create multiple elements.
+
+-- Practice: Dynamic List Builder --
+In this slide, we cover: Create input + button + list, Append items from input to list using JS, Use innerHTML or createElement.
+
+-- What are Events? --
+In this slide, we cover: Events are user actions like clicks, keypresses, submit, JavaScript listens for events and responds, Use addEventListener() to handle events.
+
+-- Handling Click Events --
+In this slide, we cover: element.addEventListener('click', handlerFn), Pass an anonymous or named function, Use e.target to access clicked element.
+
+-- Form Handling & Input --
+In this slide, we cover: Prevent default submit with e.preventDefault(), Access values from e.target.elements or inputs directly, Validate or sanitize input before processing.
+
+-- Practice: Form Submission Handler --
+In this slide, we cover: Build form to collect name + age, Display results without reloading the page, Show warning if fields are empty.
+
+-- Intro to Object-Oriented JS --
+In this slide, we cover: OOP = organizing code into reusable objects, Two styles: prototypes and classes, Focus on encapsulation and reusability.
+
+-- Declaring Classes --
+In this slide, we cover: class Animal { constructor(name) { ... } }, Add methods inside class body, Create instance with new keyword.
+
+-- Adding Methods --
+In this slide, we cover: Define speak(), move(), etc. inside class, All instances share methods via prototype, Use 'this' to refer to instance.
+
+-- Constructor Functions (Pre-ES6) --
+In this slide, we cover: function Animal(name) { this.name = name }, Use prototype to attach shared methods, Still used in some legacy code.
+
+-- Extending Classes (Inheritance) --
+In this slide, we cover: Use extends and super() in subclasses, Override methods as needed, DRY: keep shared logic in base class.
+
+-- Practice: Build an Animal Class --
+In this slide, we cover: Properties: name, species, Method: speak() logs custom message, Create Dog and Cat subclasses.
+
+-- this Keyword Deep Dive --
+In this slide, we cover: 'this' refers to the calling object, Inside class methods, 'this' = instance, Arrow functions do NOT bind 'this'.
+
+-- End of Week 4 Review --
+In this slide, we cover: DOM basics: select, modify, create, remove, Events: click, input, submit + handlers, Classes, constructors, and inheritance, Prepare for Week 5: fetch API & JSON.
+============================================================
+JS Week5 Slides
+============================================================
+
+-- JavaScript Week 5: JSON, fetch(), Callbacks, Promises --
+In this slide, we cover: Asynchronous Programming & API Interaction.
+
+-- Week 5 Overview --
+In this slide, we cover: Focus: Working with JSON data and APIs, Learn asynchronous programming with fetch(), callbacks, and promises.
+
+-- What is JSON? --
+In this slide, we cover: JSON = JavaScript Object Notation, Used for data exchange between client and server, Looks like JavaScript object literals.
+
+-- Working with JSON in JS --
+In this slide, we cover: Convert to JS: JSON.parse(jsonString), Convert to JSON: JSON.stringify(jsObject), Must use double quotes in JSON format.
+
+-- Intro to APIs --
+In this slide, we cover: API = Application Programming Interface, Web APIs expose data or services over HTTP, You interact using URLs, methods like GET or POST.
+
+-- The fetch() Function --
+In this slide, we cover: fetch(url) returns a Promise, Use .then() to handle response, Parse JSON using res.json().
+
+-- Practice: Fetch API Example --
+In this slide, we cover: Use fetch to get data from https://jsonplaceholder.typicode.com/posts, Log title of first post, Display titles in the DOM.
+
+-- Handling Errors with fetch --
+In this slide, we cover: fetch only rejects on network failure, Check res.ok and res.status manually, Use .catch() to handle thrown errors.
+
+-- What is a Callback? --
+In this slide, we cover: A function passed into another function, Used for async control before promises existed, Common in older libraries and event handling.
+
+-- Callback Example --
+In this slide, we cover: function doThing(callback) { callback(); }, setTimeout(() => { console.log('Done!'); }, 1000);, Nested callbacks = callback hell.
+
+-- What is a Promise? --
+In this slide, we cover: Promise = a value that may be available now, later, or never, States: pending → fulfilled or rejected, Use .then() for success, .catch() for errors.
+
+-- Creating a Promise --
+In this slide, we cover: let promise = new Promise((resolve, reject) => { ... }), resolve(value) → success; reject(error) → failure, Can chain multiple .then() calls.
+
+-- Chaining Promises --
+In this slide, we cover: return from each .then() to pass values down, Useful for sequences of dependent async tasks, Always add .catch() at the end.
+
+-- Async/Await Preview --
+In this slide, we cover: Syntactic sugar for promises (covered fully in Week 7), Use await to pause for async result, Cleaner and more readable than chaining.
+
+-- Practice: Fetch & Display Data --
+In this slide, we cover: Call API, use .then() to parse and log, Display results in a <ul>, Add error handling.
+
+-- End of Week 5 Review --
+In this slide, we cover: JSON is the lingua franca of web APIs, fetch() returns a Promise, Callbacks and Promises enable async logic, Preview: Node.js and file I/O next week.
+============================================================
+JS Week6 Slides
+============================================================
+
+-- JavaScript Week 6: Intro to Node.js and File I/O --
+In this slide, we cover: Server-Side JavaScript Basics.
+
+-- Week 6 Overview --
+In this slide, we cover: Focus: Introduction to Node.js and working with the file system, Learn about modules, the global object, and async I/O.
+
+-- What is Node.js? --
+In this slide, we cover: JavaScript runtime built on Chrome's V8 engine, Allows JavaScript to run outside the browser, Used for building fast, scalable network applications.
+
+-- Node.js vs Browser JS --
+In this slide, we cover: No DOM in Node, Access to file system, network, OS, CommonJS modules vs ES modules.
+
+-- Running Node Programs --
+In this slide, we cover: Use terminal/command line: node filename.js, Use console.log() for output, Check current directory with __dirname.
+
+-- Node Global Objects --
+In this slide, we cover: global (like window in browser), __dirname and __filename, process and console.
+
+-- Using require() --
+In this slide, we cover: Load built-in or custom modules, Syntax: const fs = require('fs');, Modular design for scalability.
+
+-- The File System Module (fs) --
+In this slide, we cover: fs.readFile() and fs.writeFile(), Async and sync versions (e.g. readFileSync), Useful for reading config, saving data, logging.
+
+-- Reading a File Asynchronously --
+In this slide, we cover: fs.readFile('file.txt', 'utf8', (err, data) => { ... }), Check for errors and handle content in callback, Console output or process data.
+
+-- Writing a File Asynchronously --
+In this slide, we cover: fs.writeFile('output.txt', 'Hello!', err => { ... }), Creates or overwrites file, Always check for error.
+
+-- Practice: Read and Write Files --
+In this slide, we cover: Create a file named message.txt, Write a string to it using fs.writeFile(), Read it back and log contents to console.
+
+-- Path Module Overview --
+In this slide, we cover: Handle file paths in a cross-platform way, Use path.join(), path.resolve(), path.basename(), Avoid hardcoding paths.
+
+-- Handling Errors --
+In this slide, we cover: Check if (err) inside fs callbacks, Use try/catch for synchronous code, Graceful failure improves reliability.
+
+-- Using require to Import Your Own Modules --
+In this slide, we cover: Break code into separate .js files, Export using module.exports = functionName, Import with const fn = require('./file').
+
+-- Practice: Create a Logging Utility Module --
+In this slide, we cover: logToFile(message) writes to log.txt, Use module.exports to share function, Call it from your main script.
+
+-- End of Week 6 Review --
+In this slide, we cover: Node.js enables server-side JavaScript, fs and path modules enable file I/O, require() helps modularize your code, Preview: Express.js and HTTP routing next week.
+============================================================
+JS Week7 Slides
+============================================================
+
+-- JavaScript Week 7: Express Basics, Routing & Async/Await --
+In this slide, we cover: Building HTTP Servers with Node.js.
+
+-- Week 7 Overview --
+In this slide, we cover: Focus: Creating HTTP servers with Express.js, Routing, middleware, and async/await for API development.
+
+-- What is Express? --
+In this slide, we cover: Minimalist web framework for Node.js, Simplifies server setup and route handling, Used to build REST APIs and web apps.
+
+-- Installing Express --
+In this slide, we cover: Run: npm init -y, Install: npm install express, Import: const express = require('express');.
+
+-- Basic Express Server --
+In this slide, we cover: const app = express();, app.get('/', (req, res) => res.send('Hello')), app.listen(3000, () => console.log('Server running')).
+
+-- Handling GET Requests --
+In this slide, we cover: Use app.get(path, callback), Callback receives req and res objects, Use res.send(), res.json(), or res.status().send().
+
+-- Handling POST Requests --
+In this slide, we cover: Use app.post(path, callback), Parse incoming JSON with express.json() middleware, Access data with req.body.
+
+-- Request & Response Objects --
+In this slide, we cover: req: parameters, query, body, res: send response text or JSON, res.status(code).json(data) for status codes.
+
+-- Using express.json() Middleware --
+In this slide, we cover: Middleware runs before route handler, app.use(express.json()) parses incoming JSON, Required to handle POST body data.
+
+-- Practice: Simple API --
+In this slide, we cover: GET /api/message returns { message: 'Hello' }, POST /api/message accepts { name } and responds with personalized greeting.
+
+-- Route Parameters & Query Strings --
+In this slide, we cover: Route params: /users/:id → req.params.id, Query strings: /search?q=term → req.query.q, Great for dynamic routes and filtering.
+
+-- Intro to Async/Await --
+In this slide, we cover: Async functions return a Promise, Use await to pause until Promise resolves, Cleaner alternative to .then() chaining.
+
+-- Using Async/Await in Routes --
+In this slide, we cover: Define route handler as async (req, res) => { ... }, Use try/catch to handle errors, Await external API or file read operations.
+
+-- Error Handling in Express --
+In this slide, we cover: Use try/catch in async handlers, Send error messages with res.status(500).json({ error }), Add fallback middleware for 404 and server errors.
+
+-- Practice: Async API Route --
+In this slide, we cover: GET /joke fetches random joke from external API using await, Displays response as JSON, Handles failure gracefully.
+
+-- End of Week 7 Review --
+In this slide, we cover: Express simplifies server creation and routing, Middleware adds request processing power, Async/await improves readability of async logic, Preview: Building full REST APIs in Week 8.
+============================================================
+JS Week8 Slides
+============================================================
+
+-- JavaScript Week 8: REST APIs, Middleware, and Project Structure --
+In this slide, we cover: Express Patterns for Full-Stack Apps.
+
+-- Week 8 Overview --
+In this slide, we cover: Focus: REST API design, middleware chains, and organizing code, Prepare students for full-stack project work.
+
+-- What is a REST API? --
+In this slide, we cover: REST = Representational State Transfer, Stateless, uses standard HTTP methods, URLs represent resources (nouns), methods represent actions (verbs).
+
+-- HTTP Methods & API Conventions --
+In this slide, we cover: GET = read data, POST = create new resource, PUT/PATCH = update resource, DELETE = remove resource.
+
+-- Designing Routes for Resources --
+In this slide, we cover: Use plural nouns: /api/users, /api/posts, Use IDs in route params: /api/users/:id, Separate collection and individual endpoints.
+
+-- Building a RESTful CRUD API --
+In this slide, we cover: GET /api/items → fetch all, POST /api/items → create new, GET /api/items/:id → get one, PUT /api/items/:id → update, DELETE /api/items/:id → remove.
+
+-- Practice: Item API Routes --
+In this slide, we cover: Build handlers for GET, POST, DELETE, Use in-memory array or fake DB, Respond with res.json() and status codes.
+
+-- What is Middleware? --
+In this slide, we cover: Function that runs during request lifecycle, Can modify req, res, or end response, Used for logging, auth, parsing, error handling.
+
+-- Writing Custom Middleware --
+In this slide, we cover: app.use((req, res, next) => { ... }), Log method and path, call next(), Place before route handlers.
+
+-- Using Third-Party Middleware --
+In this slide, we cover: Examples: morgan (logging), helmet (security), cors (CORS headers), Install via npm, use with app.use(), Reduces boilerplate.
+
+-- Practice: Logger Middleware --
+In this slide, we cover: Create custom logger for all incoming requests, Log method, path, and timestamp, Print to console or log file.
+
+-- Organizing Routes in Files --
+In this slide, we cover: Use express.Router() in separate files, Require route files in app.js, Keeps project modular and readable.
+
+-- Folder Structure for Express Apps --
+In this slide, we cover: /routes → routers, /controllers → logic functions, /models → data access or schemas, /public or /client → static files or front-end.
+
+-- Error Handling Middleware --
+In this slide, we cover: app.use((err, req, res, next) => { ... }), Send 500 status with message, Use try/catch in async handlers and pass error to next().
+
+-- Practice: Modularize a REST API --
+In this slide, we cover: Split routes into /routes/itemRoutes.js, Move logic into controller functions, Use router + module.exports pattern.
+
+-- End of Week 8 Review --
+In this slide, we cover: REST APIs use consistent route structures and HTTP methods, Middleware is powerful for pre- and post-processing requests, Clean project structure helps scalability, Next up: Project Planning and Final Project kickoff!.
+============================================================
+JS Week9 Slides
+============================================================
+
+-- JavaScript Week 9: Final Project Planning & Scaffolding --
+In this slide, we cover: Kickoff for Full-Stack Capstone Projects.
+
+-- Week 9 Overview --
+In this slide, we cover: Focus: Final project planning and architecture setup, Students begin working on approved projects.
+
+-- Final Project Overview --
+In this slide, we cover: Full-stack JavaScript project (front + back end), Must include DOM, routing, Express server, API logic, Frontend and backend can be served together or independently.
+
+-- Project Requirements --
+In this slide, we cover: Front-end: dynamic DOM manipulation (HTML/CSS/JS), Backend: Node.js + Express API with at least 2 endpoints, Use of external API or persistent data recommended, Well-organized file structure, modular code.
+
+-- Deliverables --
+In this slide, we cover: ✅ Project Proposal (due today), ✅ MVP Feature List, ✅ Wireframe or UI sketch, ✅ Technical architecture plan, ✅ GitHub repo with README + commit history.
+
+-- Choosing Your Project --
+In this slide, we cover: Solve a real problem or simulate a real use case, Keep it focused — MVP first, extras later, Work solo or in pairs (if permitted).
+
+-- Examples of Past Projects --
+In this slide, we cover: To-Do List App with server-side persistence, Weather Dashboard with external API + search, Mini Blog or Message Board, Quiz App with score tracking and logic.
+
+-- Defining Your MVP --
+In this slide, we cover: What is the core problem your app solves?, What is the minimum set of working features?, Write your user story: 'As a user, I want to...'.
+
+-- Wireframes & UI Sketches --
+In this slide, we cover: Draw out what each view/page/component will look like, Map layout to components or sections of code, Use paper, whiteboard, Figma, etc..
+
+-- Frontend Stack Planning --
+In this slide, we cover: Use vanilla JS, or optionally lightweight tools (e.g. Bootstrap), Build modular scripts per feature/component, Use `fetch()` to consume backend endpoints.
+
+-- Backend Stack Planning --
+In this slide, we cover: Express routes and route structure, Controllers and route handlers, Optional: middleware, file read/write, external API calls.
+
+-- Project Folder Structure --
+In this slide, we cover: client/ → HTML/CSS/JS, server/ → routes/, controllers/, app.js, public/ for static files (if serving frontend from Express).
+
+-- Project Proposal Review --
+In this slide, we cover: Instructor/peer feedback on proposal, Check for scope, feasibility, and planning detail, Revise based on feedback.
+
+-- Checklist Before You Start Coding --
+In this slide, we cover: [ ] Clear idea + MVP list, [ ] Wireframes sketched, [ ] API plan defined, [ ] File structure created, [ ] GitHub repo initialized.
+
+-- End of Week 9: Next Steps --
+In this slide, we cover: Submit final proposal for approval, Begin building core backend logic, Start wiring up basic frontend layout, Instructor check-ins during Week 10.
+============================================================
+JS Week10 Slides
+============================================================
+
+-- JavaScript Week 10: Final Project Development & Code Checkpoints --
+In this slide, we cover: Building and Iterating on Your Application.
+
+-- Week 10 Overview --
+In this slide, we cover: Focus: Development time for final project, Work through key checkpoints and receive instructor feedback.
+
+-- Project Milestones This Week --
+In this slide, we cover: ✅ Backend: Fully functional Express routes and logic, ✅ Frontend: Wireframes implemented in HTML/CSS, ✅ Fetch calls connected and tested, ✅ External APIs or data logic wired up.
+
+-- Daily Breakdown Recommendation --
+In this slide, we cover: Day 1: Focus on backend logic & testing routes, Day 2: Frontend layout and JS interaction, Day 3: Link frontend to backend with fetch(), Day 4: Debugging, polish, checkpoint review.
+
+-- Checkpoint 1: Backend Working --
+In this slide, we cover: API responds to GET/POST at minimum, Data structures or file read/write functioning, Error handling added.
+
+-- Checkpoint 2: Frontend MVP View --
+In this slide, we cover: Initial UI is live in browser, User can interact with interface, Dynamic behavior visible (e.g. button clicks, input updates DOM).
+
+-- Checkpoint 3: Frontend ↔ Backend --
+In this slide, we cover: JS fetch() hits your own backend routes, Successful response logged or rendered, Display data (e.g. list, card, table) from backend.
+
+-- Practice: Debugging Workflow --
+In this slide, we cover: Use console.log() in backend and frontend, Check browser dev tools > Network tab, Verify CORS, file paths, server restarts.
+
+-- Code Organization Tips --
+In this slide, we cover: Separate JS into modules/files where possible, Use clear naming and consistent folder structure, Comment key logic and include TODOs for polish.
+
+-- Visual Design Pass --
+In this slide, we cover: Apply CSS styling to improve UI clarity, Keep layout consistent and accessible, Optional: Use Bootstrap or flexbox/grid layout.
+
+-- Instructor Check-in Topics --
+In this slide, we cover: Is your data flow clear from input to response?, Does your backend handle errors gracefully?, What’s working? What’s blocking you?, What still needs to be tested?.
+
+-- Troubleshooting Tips --
+In this slide, we cover: Always restart server after backend changes, Check for typos in routes, filenames, API keys, Simplify and isolate bugs one step at a time.
+
+-- End of Week Goals --
+In this slide, we cover: Your MVP is functional end-to-end, All core features tested in the browser, Styling pass improves usability, You’re ready for polishing + presentation prep in Week 11.
+============================================================
+JS Week11 Slides
+============================================================
+
+-- JavaScript Week 11: Final Presentations & Course Wrap-Up --
+In this slide, we cover: Showcase, Reflect, and Celebrate.
+
+-- Week 11 Overview --
+In this slide, we cover: Focus: Student presentations and final submissions, Celebrate progress and reinforce what you've learned.
+
+-- Presentation Guidelines --
+In this slide, we cover: 5–7 minute live demonstration, Walk through features and code highlights, Explain design decisions and tech used, Be prepared to answer questions.
+
+-- Suggested Presentation Flow --
+In this slide, we cover: 1. App demo (start to finish use case), 2. Tech stack & file structure overview, 3. Challenges faced & solutions, 4. Future ideas or improvements.
+
+-- Live Demo Tips --
+In this slide, we cover: Test functionality before presenting, Open browser tabs and code in advance, Use dummy data if needed to simulate inputs, Speak clearly and focus on key features.
+
+-- Final Deliverables --
+In this slide, we cover: ✅ Fully functioning app (MVP complete), ✅ Code pushed to GitHub (with README), ✅ Shared GitHub repo with instructor, ✅ Final presentation delivered.
+
+-- Course Retrospective --
+In this slide, we cover: What did you find most challenging?, What topic surprised you the most?, What are you most proud of from your project?, What will you continue learning next?.
+
+-- Looking Ahead: Where to Go from Here --
+In this slide, we cover: Refactor your project or build a new one, Learn React or another frontend framework, Explore databases (MongoDB, PostgreSQL), Contribute to open-source or freelance projects.
+
+-- JavaScript Career Tips --
+In this slide, we cover: Keep pushing code to GitHub regularly, Build a portfolio with clear project READMEs, Practice common JS interview challenges, Stay active in dev communities (Discord, LinkedIn, etc.).
+
+-- Thank You! --
+In this slide, we cover: You’ve completed a full-stack JavaScript course 🎉, Keep learning, stay curious, and support each other, Instructor and peer feedback to follow.
