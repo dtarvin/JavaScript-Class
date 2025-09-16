@@ -87,3 +87,55 @@ person['2'] = 'Peterson';
 console.log(person['2']);
 person[1 + 1] = 'Smith';
 console.log(person['2']);
+
+// objects in arrays in objects
+var student = {
+  firstName: "Henry",
+  lastName: "Jackson",
+  id: 12345,
+  courses: [
+    {
+      class: "Full-Stack Java",
+      instructor: {
+        firstName: "Steve",
+        lastName: "Wozniak"
+      },
+      gradePercentage: 97
+    },
+    {
+      class: "Calculus",
+      instructor: {
+        firstName: "Bill",
+        lastName: "Gates"
+      },
+      gradePercentage: 86
+    }
+  ]
+}
+
+console.log('My name is ' + student.firstName + ' ' + student.lastName + ', and I am taking ' + student.courses.length + ' courses.');
+console.log('My first course is ' + student.courses[0].class + ', taught by ' + student.courses[0].instructor.firstName + ' ' + student.courses[0].instructor.lastName + '.');
+console.log('I am getting a ' + student.courses[0].gradePercentage + ' in ' + student.courses[0].class + '.');
+
+// nested objects
+const company = {
+  name: "Fisherman's Delight",
+  address: {
+    streetAddress: "123 South St",
+    city: "Omaha",
+    state: "NE",
+    zip: 681371234
+  },
+  phoneNumber: 5551234567,
+  employeeCount: 25
+}
+console.log("The name of the company is " + company.name + ". It is located at " +
+  company.address.streetAddress + " " + company.address.city + ", " + company.address.state +
+  " " + company.address.zip + " and its phone number is " + company.phoneNumber +
+  ". The company has " + company.employeeCount + " employees.");
+console.log(`The name of the company is ${company.name}. It has ${company.employeeCount} employees`);
+
+const b = { name: "hello" }; // can't assign new value
+b = { name: "world" }; // "[Line 139] TypeError: Attempted to assign to readonly property."
+b.name = "world"; // mutating the value of constant "b"
+console.log(b); // this will show {name: "world"}

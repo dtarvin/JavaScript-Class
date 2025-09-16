@@ -85,3 +85,58 @@ console.log(bookList2);
 bookList1[0] = 'Thomas';
 console.log(bookList1);
 console.log(bookList2);
+
+// push()
+var cars = ["Subaru", "Audi", "Volkswagen"];
+console.log("The third car in the list is " + cars[2]);
+cars.push("Chevy");
+cars.push("Ford");
+cars.push("Honda");
+cars.push("Toyota");
+cars.push("Fiat");
+cars.push("Buick");
+cars.push("Jeep");
+console.log(cars.length);
+// ["Subaru", "Audi", "Volkswagen", "Chevy", "Ford", "Honda",
+// "Toyota", "Fiat", "Buick", "Jeep"]
+
+// pop() and splice()
+const food = ["pizza", "wings", "fries", "salad", "soup"];
+food.pop();
+console.log(food);
+food.push("cake", "ice cream", "chips");
+console.log(food);
+food.splice(2, 4);
+console.log(food);
+food.splice(1);
+console.log(food);
+
+// forEach
+
+var vegetables = ["radish", "beets", "broccoli", "Brussels Sprouts", "Lima Beans"];
+
+function listVegetables(veggies) {
+  veggies.forEach(function (veggies) {
+    console.log("I like to eat " + veggies);
+  });
+}
+
+var numbers = [1, 2, 3, 4, 5];
+// numbers.forEach(function(number){
+//     console.log("The number was " + number);
+//     number *= number;
+//     console.log("But now it's " + number);
+// });
+
+// forEach with arrow function
+numbers.forEach((number) => {
+  console.log("The number was " + number);
+  number *= number;
+  console.log("But now it's " + number);
+});
+
+// mutability of arrays
+const a = [1, 2, 3]; // can't change the value of a constant
+a = [1, 2, 3, 4, 5]; // "[Line 140] TypeError: Attempted to assign to readonly property."
+a.push(4, 5); //mutating the value of constant "a"
+console.log(a); // this will show (1, 2, 3, 4, 5)
