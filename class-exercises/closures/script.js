@@ -8,3 +8,4 @@ function varTimeout() {
 
 varTimeout();
 
+console.log("Hello from the global scope");
