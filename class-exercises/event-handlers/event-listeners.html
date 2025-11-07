@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+
+<body>
+    <button>Click me any way you want</button>
+    <p>No handler here.</p>
+
+    <script>
+        const button = document.querySelector("button");
+
+        button.addEventListener("mousedown", function (event) {
+            console.log('Button clicked!');
+            if (event.which == 1) {
+                alert('Left mouse button');
+                /* } else if (event.which == 2) {
+                    alert('Middle mouse button'); */
+            } else if (event.which == 3) {
+                alert('Right mouse button');
+            }
+        });
+
+        /* function once() {
+            alert("Button clicked");
+            button.removeEventListener("click", once);
+        }
+        button.addEventListener("click", once); */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating nodes</title>
+</head>
+
+<body>
+    <blockquote id="quote">
+        No book can ever be finished....
+    </blockquote>
+
+    <script>
+        function elt(type) {
+            let node = document.createElement(type);
+            for (let i = 1; i < arguments.length; i++) {
+                let child = arguments[i];
+                if (typeof child == 'string') {
+                    child = document.createTextNode(child);
+                    node.appendChild(child);
+                }
+                return node;
+            }
+        }
+
+        document.getElementById("quote").appendChild(
+            elt("strong", "Karl Popper")
+        )
+    </script>
+</body>
+
+</html>
