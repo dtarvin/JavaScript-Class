@@ -114,3 +114,15 @@ switch (car) {
     break;
 }
 // Regular car
+
+let neighbor = {
+  name: "Bob",
+  age: 29,
+  address: {
+    street: "123 Main St",
+    city: "Sacramento",
+    state: "CA",
+    zip: "12345"
+  },
+  pets: ["dog", "cat"]
+};
