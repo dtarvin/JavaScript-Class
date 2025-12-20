@@ -1,0 +1,111 @@
+Amazon Certified Cloud Practitioner - CLF-C02 exam
+Topics covered, types of questions to expect, and scoring methodology
+
+Domain 1: Cloud Concepts - 24% of exam
+	- Define and explain the benefits of cloud computing (e.g. elasticity, scalability, agility)
+	- Understand the AWS Cloud value proposition and economic benefits
+	- Compare different cloud deployment models (public, private, hybrid)
+	- Identify the basic global infrastructure of the AWS Cloud
+	- Describe key  concepts such as high availability and fault tolerance
+	
+Domain 2: Security and Compliance - 30% of exam
+	- Understand the AWS Shared Responsibility Model
+	- Understand access management, such as Identity and Access Management (IAM) roles, users, and groups
+	- Recognize AWS security services like AWS WAF (Web Application Firewall), Shield, Security Hub, Macie, and GuardDuty
+	- Understand data protection mechanisms (encryption, key management)
+	- Identify compliance programs and AWS artifact usage
+	
+Domain 3: Cloud Technology and Services: 34% of exam
+	- Describe the basic functions of core AWS services including Elastic Computing Cloud (EC2), Simple Storage Service (S3), Relational Database Service (RDS), and Lambda
+	- Understand the AWS global infrastructure (Regions, Availability Zones, Edge Locations)
+	- Differentiate between compute, storage, database, and networking services
+	- Understand the concepts of containers and serverless computing 
+	- Identify AWS service categories and their use cases
+	
+Domain 4: Billing, Pricing, and Support - 12% of exam
+	- Understand AWS pricing models (On-Demand, Reserved, and Spot Instances)
+	- Identify key AWS billing and cost management tools (Cost Explorer, Budgets)
+	- Explain the AWS Free Tier and how to track usage
+	- Understand the features of AWS Support Plans
+	- Recognize the AWS Marketplace and its role in procurement
+	
+Exam Details
+65 questions total
+	- only 50 count toward final score
+	- remaining 15 are experimental
+	- better off guessing than not answering
+
+Types of questions:
+	- multiple choice - one of three answers
+	- multiple response - two or more correct from list of five or more options
+	- every question focuses on one topic with fact-based answers
+	- no trick questions
+	- no mix of multiple subject areas in one question
+	- no partial credit
+	
+Score
+	- between 100 and 1,000
+	- passing requires minimum score of 700
+	- scaled scoring system to standardize results across different versions of the exam
+	
+Exam is 90 minutes
+Cost is typically $100
+
+Exam Delivery Methods
+
+Online proctored exam (via Pearson VUE OnVUE)
+	- need private quiet, well lit room with no interruptions
+	- no one else allowed to enter once exam begins
+	- desk must be completely clear of any unauthorized materials such as books, notes, or devices
+	- can only use one monitor
+	- before test starts, must use webcam to scan entire room and workspace to confirm that you are following exam policies
+	- during exam, webcam and microphone must stay on the entire time for continuous monitoring
+	- can't leave seat or take unscheduled breaks
+	- can't speak aloud, look away from the screen, cover mouth or interact with someone off-camera
+	- must run pre-exam check and confirm internet connection is stable
+	- webcam and mic must clearly capture your face and voice, especially during ID verification and room scan
+	- need to show one valid, unexpired government-issued photo ID with your name and signature
+	- name must match exactly with the one in your AWS Certification Account.
+	
+In-person test center exam (via Pearson VUE)
+
+	- use equipment provided on-site
+	- must store personal items like phones, bags, and study materials in a designated area 
+		- won't be accessible during test
+	- live proctor will be present to enforce rules and maintain security
+	- can take unscheduled breaks if needed, but exam clock keeps ticking, and you'll have to complete a check-in process each time you return
+	- need two forms of ID:
+		- primary government-issued ID including photo and signature
+		- secondary ID that shows either name and signature or name and photo
+		- both must be valid and unexpired
+	
+Registration and Rescheduling	
+	- Must be at least 13 years old to take exam 
+	- Special requirements for ages 13-17, including consent of parent or legal guardian
+	- To register:
+		- go to https://aws.amazon.com/certification/certified-cloud-practitioner/
+		- select Schedule an exam 
+		- provide profile information about yourself: name, address, phone, etc
+		- you will get exam dashboard
+		- go to left menu bar and select Exam Registration and then choose Schedule an exam 
+		
+Canceling and Rescheduling
+	- can cancel or reschedule up to 24 hours before scheduled exam without penalty
+	- if changing appointment less than 24 hours in advance, you might forfeit your fee
+	- if you miss exam entirely, you will not be refunded and you must wait at least 24 hours before rescheduling
+	- missing your appointment doesn't count as failing
+	- for a medical emergency, contact Pearson VUE directly for support and, if appropriate, provide documentation to waive the fee or reschedule without additional costs
+	
+Retaking exam 
+	- to retake after failing, a 14-day waiting period applies
+	- every exam attempt requires payment of the full fee 
+	
+Accomodations
+	- requesting accomodations for documented disabilities or for ESL must be done before scheduling the exam by selecting Request accomodations on your account dashboard
+	
+Passing the exam 
+	- AWS awards you a digital badge through Credly's Acclaim platform to showcase your achievement on social media, email signatures, or your personal website
+	- certification is valid for 3 years
+	- at recertification you are eligible for a 50% discount on the exam fee 
+	
+	
